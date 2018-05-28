@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QuizzApp</string>
+    <string name="firstQuestion">1.If you are a married to a U.S citizen, how many years until you can become a citizen?</string>
+    <string name="secondQuestion">2.If you are a married to a U.S citizen, how many years until you can become a citizen?</string>
+    <string name="thirdQuestion">3.If you are a married to a U.S citizen, how many years until you can become a citizen?</string>
+    <string name="fourthQuestion">4.If you are a married to a U.S citizen, how many years until you can become a citizen?</string>
+    <string name="fifthQuestion">5.If you are a married to a U.S citizen, how many years until you can become a citizen?</string>
+
 </resources>
