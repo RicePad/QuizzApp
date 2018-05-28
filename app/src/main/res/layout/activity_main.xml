@@ -4,21 +4,133 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:background="#000">
 
-
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="8dp"
-            android:text="1. Toppings" />
+            android:scaleType="center"
+            android:src="@drawable/uscis2" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
 
-    </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/firstQuestion"
+                android:textSize="20sp"
+                android:textColor="#fff" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/secondQuestion"
+                android:textSize="20sp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/thirdQuestion"
+                android:textSize="20sp"
+                android:textColor="#fff" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fourthQuestion"
+                android:textSize="20sp"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freedom of Speech"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                android:textColor="#84bd00"
+                android:textColorHint="#84bd00"
+                android:background="#fff"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freedom of Speech"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                android:textColor="#84bd00"
+                android:textColorHint="#84bd00"
+                android:background="#fff"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freedom of Speech"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp"
+                android:textColor="#84bd00"
+                android:textColorHint="#84bd00"
+                android:background="#fff"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fifthQuestion"
+                android:textSize="20sp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textCapWords"
+                android:textColor="#fff"
+                android:hint="Answer here:"
+                android:textColorHint="#84bd00"
+                />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>
