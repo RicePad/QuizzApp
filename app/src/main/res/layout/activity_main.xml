@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="center"
+            android:scaleType="centerCrop"
             android:src="@drawable/uscis2" />
 
 
@@ -34,6 +34,51 @@
                 android:text="@string/firstQuestion"
                 android:textSize="20sp"
                 android:textColor="#fff" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp">
+
+                        <RadioButton
+                            android:id="@+id/radio_pirates1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#fff"
+                            android:onClick="onRadioButtonClicked"
+                            android:paddingRight="20dp"
+                            android:text="5 years"
+                            android:textColor="#84bd00"
+                            android:textColorHint="#84bd00"/>
+
+
+
+                        <RadioButton
+                            android:id="@+id/radio_pirates3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#fff"
+                            android:onClick="onRadioButtonClicked"
+                            android:paddingRight="20dp"
+                            android:text="3 years"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="#84bd00"
+                            android:textColorHint="#84bd00"/>
+                    </RelativeLayout>
+
+                </RadioGroup>
+
 
 
             <TextView
