@@ -47,14 +47,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String Q3EditTextInput(){
-        EditText checkUserPresidentInput = (EditText) findViewById(R.id.edit_text_first_president);
-        String presidentFullName = checkUserPresidentInput.getText().toString();
+        EditText checkUserPresidentNameInput = (EditText) findViewById(R.id.edit_text_first_president);
+        String presidentFullName = checkUserPresidentNameInput.getText().toString();
         return presidentFullName;
     }
 
     private void verifyQ3EditTextInput(){
         String fullName = Q3EditTextInput();
         if(fullName.trim().equalsIgnoreCase("George Washington")){
+            totalRghtAnswers += 1;
+        }
+    }
+
+    private String Q5EditTextInput(){
+        EditText check44thPresidentNameInput = (EditText) findViewById(R.id.edit_text_44th_president);
+        String presidentFullName = check44thPresidentNameInput.getText().toString();
+        return presidentFullName;
+    }
+
+    private void verifyQ5EditTextInput(){
+        String fullName = Q5EditTextInput();
+        if(fullName.trim().equalsIgnoreCase("Barack Obama")){
             totalRghtAnswers += 1;
         }
     }
