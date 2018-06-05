@@ -22,15 +22,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-
-
-
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="109dp"
+                android:layout_height="85dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/firstQuestion"
                 android:textSize="20sp"
                 android:textColor="#fff" />
@@ -46,9 +42,8 @@
                         android:layout_height="match_parent"
                         android:paddingLeft="50dp"
                         android:paddingRight="50dp">
-
                         <RadioButton
-                            android:id="@+id/radio_pirates1"
+                            android:id="@+id/radio_button_5_years"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"
@@ -59,9 +54,6 @@
                             android:text="5 years"
                             android:textColor="#84bd00"
                             android:textColorHint="#84bd00"/>
-
-
-
                         <RadioButton
                             android:id="@+id/radio_pirates3"
                             android:layout_width="wrap_content"
@@ -76,40 +68,92 @@
                             android:textColor="#84bd00"
                             android:textColorHint="#84bd00"/>
                     </RelativeLayout>
-
                 </RadioGroup>
 
 
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="109dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/secondQuestion"
                 android:textSize="20sp"
                 android:textColor="#fff" />
 
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp">
+                    <RadioButton
+                        android:id="@+id/radio_button_50_states"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#fff"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingRight="20dp"
+                        android:text="50 states"
+                        android:textColor="#84bd00"
+                        android:textColorHint="#84bd00"/>
+                    <RadioButton
+                        android:id="@+id/radio_pirates3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#fff"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingRight="20dp"
+                        android:text="51 states"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#84bd00"
+                        android:textColorHint="#84bd00"/>
+                </RelativeLayout>
+            </RadioGroup>
+
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="109dp"
+                android:layout_height="85dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/thirdQuestion"
                 android:textSize="20sp"
                 android:textColor="#fff" />
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:inputType="textCapWords"
+                android:textColor="#fff"
+                android:hint="Answer here:"
+                android:textColorHint="#84bd00"
+                android:id="@+id/edit_text_first_president"
+
+                />
+
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="109dp"
+                android:layout_height="85dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/fourthQuestion"
                 android:textSize="20sp"
                 android:textColor="#fff" />
 
             <CheckBox
+                android:id="@+id/freedom_speech"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Freedom of Speech"
@@ -120,15 +164,18 @@
                 android:textSize="16sp"
                 android:textColor="#84bd00"
                 android:textColorHint="#84bd00"
-                android:background="#fff"/>
+                android:background="#fff"
+                android:layout_marginLeft="10dp"/>
 
 
             <CheckBox
+                android:id="@+id/freedom_pet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Freedom of Speech"
+                android:text="Freedom of owning a pet"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:textSize="16sp"
@@ -138,11 +185,13 @@
 
 
             <CheckBox
+                android:id="@+id/freedom_religion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Freedom of Speech"
+                android:text="Freedom of Religion"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:textSize="16sp"
@@ -154,9 +203,9 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="109dp"
+                android:layout_height="85dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/fifthQuestion"
                 android:textSize="20sp"
                 android:textColor="#fff" />
@@ -170,10 +219,19 @@
                 android:textColor="#fff"
                 android:hint="Answer here:"
                 android:textColorHint="#84bd00"
+                android:id="@+id/edit_text_44th_president"
+
                 />
 
 
 
+
+            <Button
+                android:id="@+id/submitScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:layout_gravity="center_horizontal"/>
 
         </LinearLayout>
     </RelativeLayout>
