@@ -1,0 +1,7 @@
+<!-- TextView size -->
+<resources>
+    <dimen name="text_size">13sp</dimen>
+    <dimen name="text_size_box">13sp</dimen>
+    <dimen name="marginTop">1dp</dimen>
+    <dimen name="marginBottom">1dp</dimen>
+</resources>
