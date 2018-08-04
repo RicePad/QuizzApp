@@ -5,5 +5,12 @@
     <string name="thirdQuestion">3.Who was the first president of the United States of America?</string>
     <string name="fourthQuestion">4.Which of the statements is true about the constitution?</string>
     <string name="fifthQuestion">5. Who was the 44th president of the United States of America?</string>
+    <string name="rb_fiveYears">5 years</string>
+    <string name="rb_threeYears">3 years</string>
+    <string name="rb_fiftyStates">50 states</string>
+    <string name="rb_fiftyOneStates">51 states</string>
+    <string name="cb_freedomSpeech">Freedom of Speech</string>
+    <string name="cb_freedomPet">Freedom of owning a pet</string>
+    <string name="cb_freedomReligion">Freedom of Religion</string>
 
 </resources>
